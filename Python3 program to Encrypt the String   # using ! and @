@@ -1,0 +1,33 @@
+# Function to encrypt the string  
+def encrypt(input_arr) : 
+  
+    # evenPos is for storing encrypting  
+    # char at evenPosition  
+    # oddPos is for storing encrypting  
+    # char at oddPosition  
+    evenPos = '@'; oddPos = '!';  
+  
+    for i in range(len(input_arr)) : 
+  
+        # Get the number of times the character  
+        # is to be repeated  
+        ascii = ord(input_arr[i]);  
+        repeat = (ascii - 96 ) if ascii >= 97 \ 
+                               else (ascii - 64);  
+  
+        for j in range(repeat) : 
+              
+            # if i is odd, print '!'  
+            # else print '@'  
+            if (i % 2 == 0) : 
+                print(oddPos, end = "");  
+            else : 
+                print(evenPos, end = "");  
+  
+# Driver code  
+if __name__ == "__main__" :  
+  
+    input_arr = [ 'A', 'b', 'C', 'd' ];  
+  
+    # Encrypt the String  
+    encrypt(input_arr); 
