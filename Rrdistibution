@@ -1,0 +1,27 @@
+
+# Function that returns true if the 
+# array can be redistributed to 
+# the form 1, 2, 3, ..., N 
+def canRedistribute(a, n): 
+  
+    # Calculate the sum of the array elements 
+    sum = 0; 
+    for i in range(n): 
+        sum += a[i]; 
+  
+    # If can be redistributed 
+    if (sum == (n * (n + 1)) / 2): 
+        return True; 
+  
+    return False; 
+  
+# Driver code 
+  
+a = [7, 4, 1, 1, 2 ]; 
+n = len(a); 
+  
+if (canRedistribute(a, n)): 
+    print("Yes"); 
+else: 
+    print("No"); 
+  
