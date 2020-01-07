@@ -1,9 +1,7 @@
-# Python 3 code to find sum  
-# of elements in given array 
-def _sum(arr,n): 
+# Python 3 code to find sum of elements in given array 
+def sum(arr,n): 
       
-    # return sum using sum  
-    # inbuilt sum() function 
+    # return sum using sum inbuilt sum() function 
     return(sum(arr)) 
   
 # driver function 
@@ -11,10 +9,10 @@ arr=[]
 # input values to list 
 arr = [12, 3, 4, 15] 
   
-# calculating length of array 
+# to calculate length of array 
 n = len(arr) 
   
-ans = _sum(arr,n) 
+ans = sum(arr,n) 
   
 # display sum 
-print (\'Sum of the array is \',ans) 
+print (\"Sum of the array is \",ans) 
