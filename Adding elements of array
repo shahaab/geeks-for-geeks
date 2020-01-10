@@ -1,19 +1,13 @@
-
-# Python implementation of the approach 
-  
-# Function that returns true if the 
-# array can be redistributed to 
-# the form 1, 2, 3, ..., N 
+# Function that returns true if the array can be redistributed to the form 1, 2, 3, ..., N 
 def canRedistribute(a, n): 
   
-    # Calculate the sum of the array elements 
+# Calculate the sum of the array elements 
     sum = 0; 
     for i in range(n): 
         sum += a[i]; 
-  
-    # If can be redistributed 
-    if (sum == (n * (n + 1)) / 2): 
-        return True; 
+ # If can be redistributed 
+   if (sum == (n * (n + 1)) / 2): 
+        return True;   
   
     return False; 
   
