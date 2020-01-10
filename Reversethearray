@@ -1,0 +1,24 @@
+def reverseArray(array, start, end): 
+    while (start < end): 
+        temp = array[start] 
+        array[start] = array[end] 
+        array[end] = temp 
+        start += 1
+        end = end-1
+  
+# Function to left rotate array[] of size n by d 
+def leftRotate(array, d): 
+    n = len(array) 
+    reverseArray(array, 0, d-1) 
+    reverseArray(array, d, n-1) 
+    reverseArray(array, 0, n-1) 
+  
+# Function to print an array 
+def printArray(array): 
+    for i in range(0, len(array)): 
+        print array[i], 
+  
+# Driver function to test above functions 
+array = [1, 2, 3, 4, 5, 6, 7] 
+leftRotate(array, 2) # Rotate array by 2 
+printArray(array) 
