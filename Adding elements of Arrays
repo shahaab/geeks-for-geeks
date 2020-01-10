@@ -1,0 +1,18 @@
+#Code to find sum of elements in given array 
+def sum(array,n): 
+      
+# return sum using sum inbuilt sum() function 
+return(sum(array)) 
+  
+# driver function 
+array=[] 
+# input values to list 
+array = [12, 3, 4, 15] 
+  
+# to calculate length of array 
+n = len(array) 
+  
+ans = sum(array,n) 
+  
+# display sum 
+print (\"Sum of the array is \",ans) 
