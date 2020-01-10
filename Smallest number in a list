@@ -1,0 +1,5 @@
+# To find smallest number in a list 
+# list of numbers 
+Numberlist = [10, 20, 1, 45, 99] 
+# printing the maximum element 
+print("Smallest element is:", min(Numberlist)) 
