@@ -1,7 +1,4 @@
-
-# Function that returns true if the 
-# array can be redistributed to 
-# the form 1, 2, 3, ..., N 
+# Function that returns true if the array can be redistributed to the form 1, 2, 3, ..., N 
 def canRedistribute(a, n): 
   
     # Calculate the sum of the array elements 
