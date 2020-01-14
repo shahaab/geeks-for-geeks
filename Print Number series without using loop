@@ -1,28 +1,29 @@
 # Python program to Print Number series without using loop 
   
-def PrintNumber(N, main, K, flag): 
-    #print the number 
+ def PrintNumber(N, main, K, flag): 
     print(N, end = " ") 
       
-    # change flag if number become negative 
-       if (N <= 0): 
-        if(flag==0): 
-            flag = 1
-        else: 
-            flag = 0
+# change flag if number become negative 
+      
+ if (N <= 0): 
+   if(flag==0): 
+       flag = 1
+   else: 
+       flag = 0
           
-    # base condition for second_case (Adding K) 
+# base condition for second_case (Adding K) 
       
-    if (N == main and (not(flag))): 
-        return
+ if (N == main and (not(flag))): 
+   return
+ 
+ # if flag is true we subtract value until number is greater then zero 
+            
+   if (flag == True): 
+     PrintNumber(N - K, main, K, flag) 
+     return
       
-    # if flag is true we subtract value until number is greater then zero 
-      
-    if (flag == True): 
-        PrintNumber(N - K, main, K, flag) 
-        return
-      
-    # second case (Addition ) 
-    if (not(flag)): 
-        PrintNumber(N + K, main, K, flag); 
-        return
+ # second case (Addition ) 
+   
+   if (not(flag)): 
+     PrintNumber(N + K, main, K, flag); 
+     return
